@@ -8,7 +8,7 @@
     "watch:sass": "sass ./sass/main.scss:./css/style.comp.css --watch",
     "compile:sass": "sass ./sass/main.scss:./css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./sass/main.scss -o ./css/style.prefix.css",
-    "compress:css": "sass ./sass/main.scss:./css/style.comp.css --style compressed",
+    "compress:css": "sass ./sass/main.scss:./css/main.css --style compressed",
     "build:css": "npm-run-all clean compile:sass prefix:css compress:css"
   },
   "keywords": [],
