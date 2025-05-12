@@ -1,0 +1,25 @@
+{
+  "name": "projeto_ecommerce",
+  "version": "1.0.0",
+  "description": "Este projeto é uma **cópia não oficial** da página da marca **Reserva**, criado **apenas para fins de estudo e prática de desenvolvimento web**.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./css/style.*.css",
+    "watch:sass": "sass ./sass/main.scss:./css/style.comp.css --watch",
+    "compile:sass": "sass ./sass/main.scss:./css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./sass/main.scss -o ./css/style.prefix.css",
+    "compress:css": "sass ./sass/main.scss:./css/style.comp.css --style compressed",
+    "build:css": "npm-run-all clean compile:sass prefix:css compress:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "rimraf": "^5.0.10",
+    "sass": "^1.88.0"
+  }
+}
