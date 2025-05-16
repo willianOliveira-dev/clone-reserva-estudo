@@ -1,3 +1,5 @@
+@use "../abstracts/index" as *;
+
 html {
   font-size: 62.5%;
 }
@@ -8,4 +10,24 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $primary-color;
+  background-color: black;
+}
+
+.free-shipping {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: $color-ligth;
+
+  &__span {
+    color: $color-green;
+    font-weight: 600;
+  }
 }
