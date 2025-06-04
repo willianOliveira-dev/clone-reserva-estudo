@@ -1,0 +1,42 @@
+@use "../abstracts/index" as *;
+
+.category {
+  @include flex();
+
+  &__item {
+    @include flex($direction: column, $align: center, $gap: 0.65rem);
+    width: calc(100% / 3);
+    transition: border 200ms ease-in;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    border-radius: 100%;
+    &:hover {
+      & .category__img {
+        border-color: transparent;
+      }
+      background-image: $gradient-category;
+    }
+  }
+
+  &__img {
+    position: relative;
+    border: solid 4px $color-gray-ligthen;
+    border-radius: 100%;
+    width: 11.9rem;
+    height: 11.9rem;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__label {
+    font-weight: 200;
+    letter-spacing: 0.15rem;
+  }
+}
