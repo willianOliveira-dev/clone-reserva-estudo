@@ -1,0 +1,50 @@
+@use "../abstracts/index" as *;
+
+.carousel {
+  width: 100%;
+  aspect-ratio: 192/55;
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    @include flex();
+    transform: translate(0);
+    transition: transform ease 1s;
+  }
+
+  &__item {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  &__buttons {
+    position: absolute;
+    @include flex($justify: center, $align: center, $gap: 0.5rem);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -2rem);
+    width: 37.5rem;
+    z-index: 1;
+  }
+
+  &__button {
+    position: relative;
+    height: 2.5px;
+    min-width: calc((100% - 1rem) / 3);
+    background-color: rgba($color: $color-ligth, $alpha: 0.35);
+    border-radius: 1.5rem;
+
+    &__progress {
+      position: absolute;
+      height: 100%;
+      width: 1%;
+      background-color: $color-ligth;
+      
+
+      &--active {
+        width: 100%;
+        transition: width 5s ease-out;
+      }
+    }
+  }
+}

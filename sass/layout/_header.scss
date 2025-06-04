@@ -249,7 +249,7 @@
       transform: translateY(-100%);
       background-color: transparent;
       border: solid 1rem transparent;
-      border-bottom-color: lighten($color: $color-black, $amount: 75%);
+      border-bottom-color: lighten($color: $color-black, $amount: 75%)
     }
   }
 }
