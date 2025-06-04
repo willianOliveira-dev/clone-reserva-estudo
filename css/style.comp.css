@@ -338,6 +338,11 @@ body {
   font-weight: 600;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 .header {
   position: sticky;
   display: flex;
@@ -602,6 +607,58 @@ body {
   background-color: transparent;
   border: solid 1rem transparent;
   border-bottom-color: rgb(191.25, 191.25, 191.25);
+}
+
+.carousel {
+  width: 100%;
+  aspect-ratio: 192/55;
+  overflow: hidden;
+  position: relative;
+}
+.carousel__container {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: start;
+  gap: 0;
+  flex-wrap: nowrap;
+  transform: translate(0);
+  transition: transform ease 1s;
+}
+.carousel__item {
+  min-width: 100%;
+  height: 100%;
+}
+.carousel__buttons {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -2rem);
+  width: 37.5rem;
+  z-index: 1;
+}
+.carousel__button {
+  position: relative;
+  height: 2.5px;
+  min-width: calc((100% - 1rem) / 3);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 1.5rem;
+}
+.carousel__button__progress {
+  position: absolute;
+  height: 100%;
+  width: 1%;
+  background-color: #fff;
+}
+.carousel__button__progress--active {
+  width: 100%;
+  transition: width 5s ease-out;
 }
 
 /*# sourceMappingURL=style.comp.css.map */
