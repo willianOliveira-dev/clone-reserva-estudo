@@ -11,12 +11,13 @@ Este projeto é uma **cópia não oficial** da página da marca **Reserva**, cri
 - HTML5
 - CSS3
 - JavaScript (básico)
-- (Adicionar frameworks se for usar, ex: Tailwind, Bootstrap, etc)
 
 ## 🎯 Objetivo do projeto
+
 - Praticar construção de landing pages responsivas.
 - Melhorar habilidades de clonagem de layouts reais.
 - Treinar boas práticas de código.
 
 ## 🔗 Link do projeto (opcional)
+
 Se publicar no GitHub Pages ou Vercel, coloca o link aqui.

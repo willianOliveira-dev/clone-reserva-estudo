@@ -2,6 +2,7 @@
 
 .header {
   position: sticky;
+  top: 0;
   @include flex($align: center, $justify: space-between);
   background-color: $color-ligth;
   padding: 0 4.88rem;
@@ -249,7 +250,7 @@
       transform: translateY(-100%);
       background-color: transparent;
       border: solid 1rem transparent;
-      border-bottom-color: lighten($color: $color-black, $amount: 75%)
+      border-bottom-color: lighten($color: $color-black, $amount: 75%);
     }
   }
 }

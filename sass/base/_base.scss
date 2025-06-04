@@ -17,7 +17,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   color: $primary-color;
-  background-color: black;
+  background-color: $color-ligth;
 }
 
 .free-shipping {
@@ -25,13 +25,13 @@ body {
   font-size: 1.4rem;
   text-align: center;
   color: $color-ligth;
+  background-color: $color-black;
 
   &__span {
     color: $color-green;
     font-weight: 600;
   }
 }
-
 
 img {
   width: 100%;
