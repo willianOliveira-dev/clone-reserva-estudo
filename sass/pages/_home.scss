@@ -16,6 +16,10 @@
   &--banner-home {
     padding-bottom: 3.4rem;
   }
+
+  &--benefits {
+    margin: 4.1rem 0 5rem 0;
+  }
 }
 
 .banner-home {
@@ -27,5 +31,34 @@
     &:last-child {
       grid-column: 1 / span 2;
     }
+  }
+}
+
+.benefits {
+  @include flex($justify: space-around);
+  &__item {
+    @include flex($direction: column, $align: center, $gap: 1rem);
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  &__label {
+    @include flex($direction: column, $align: center, $gap: 0.5rem);
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    line-height: 1;
+    color: $color-gray-darken;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  &__img {
+    width: 3rem;
+    height: 3rem;
   }
 }
