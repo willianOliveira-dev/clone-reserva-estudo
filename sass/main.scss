@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
-@use "vendors/normalize";
+@use "./vendors/normalize";
 
-@use "base/base";
+@use "./base/base";
 
-@use "abstracts/index" as abstracts;
+@use "./abstracts/index" as abstracts;
 
-@use "layout/footer";
-@use "layout/header";
+@use "./layout/footer";
+@use "./layout/header";
 
-@use "components/button";
-@use "components/carousel";
-@use "components/category";
-@use "components/highlight";
-@use "components/slider";
+@use "./components/button";
+@use "./components/carousel";
+@use "./components/category";
+@use "./components/highlight";
+@use "./components/slider";
 
-@use "pages/home";
+@use "./pages/home";
