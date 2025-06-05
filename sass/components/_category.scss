@@ -2,8 +2,6 @@
 
 .category {
   @include flex();
-  margin-top: 4.2rem;
-
   &__item {
     @include flex($direction: column, $align: center, $gap: 0.65rem);
     width: calc(100% / 3);
