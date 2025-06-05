@@ -16,3 +16,15 @@
     padding-bottom: 3.4rem;
   }
 }
+
+.banner-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  &__item {
+    &:last-child {
+      grid-column: 1 / span 2;
+    }
+  }
+}
