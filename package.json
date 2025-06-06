@@ -6,13 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rimraf ./css/style.*.css",
-    "watch:sass": "sass ./sass/main.scss:./css/style.comp.css --watch",
-    "compile:sass": "sass ./sass/main.scss:./css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./css/style.comp.css -o ./css/style.prefix.css",
-    "compress:css": "sass ./sass/main.scss:./css/main.css --style compressed",
-    "build:css": "npm-run-all clean compile:sass prefix:css compress:css"
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
