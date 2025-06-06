@@ -10,7 +10,9 @@ Este projeto é uma **cópia não oficial** da página da marca **Reserva**, cri
 ## 📚 Tecnologias utilizadas
 - HTML5
 - CSS3
-- JavaScript (básico)
+- JavaScript
+- Python
+- Django
 
 ## 🎯 Objetivo do projeto
 
