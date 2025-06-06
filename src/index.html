@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
     <link rel="prealod" href="./css/style.comp.css" as="style" />
     <link rel="stylesheet" href="./css/style.comp.css" />
 
@@ -2549,33 +2545,8 @@
           </div>
         </div>
       </section>
-      <section class="section">
-        <div class="teste"></div>
-      </section>
+      <section class="section"></section>
     </main>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script>
-      const slider = new Swiper(".slider", {
-        slidesPerView: 6,
-        loop: true,
-        pagination: {
-          el: ".slider__pagination",
-          clickable: true,
-        },
-      });
-
-      const fashionChoice = new Swiper(".fashion-choice__category.swiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 16,
-        loop: true,
-        pagination: {
-          el: ".fashion-choice__pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

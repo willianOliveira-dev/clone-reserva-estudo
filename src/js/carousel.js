@@ -3,14 +3,14 @@ let isFirstRun = true; // Garantir um atraso(delay) na página
 let carouselContainer = document.querySelector(".carousel__container");
 let buttonElements = Array.from(document.querySelectorAll(".carousel__button"));
 
-function resetProgress() {
+export function resetProgress() {
   buttonElements.forEach((button) => {
     let progress = button.querySelector(".carousel__button__progress");
     progress.classList.remove("carousel__button__progress--active");
   });
 }
 
-function progressBar(itemCurrent) {
+export function progressBar() {
   resetProgress();
   let progress = buttonElements[itemCurrent].querySelector(
     ".carousel__button__progress"
@@ -31,5 +31,3 @@ function progressBar(itemCurrent) {
     progressBar(itemCurrent);
   }, 5000);
 }
-
-progressBar(itemCurrent);
