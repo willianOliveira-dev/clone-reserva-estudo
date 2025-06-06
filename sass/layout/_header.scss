@@ -96,7 +96,7 @@
     &__group {
       @include flex($direction: column, $gap: 2rem);
       &-title {
-        font-family: $font-secundary, serif;
+        font-family: $font-secondary, serif;
         font-size: 1.92rem;
         font-weight: 700;
         color: $primary-color;
@@ -196,7 +196,7 @@
     &__name {
       font-size: 1.6rem;
       font-weight: 700;
-      font-family: $font-secundary, sans-serif;
+      font-family: $font-secondary, sans-serif;
       text-transform: uppercase;
     }
 
