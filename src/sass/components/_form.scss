@@ -1,0 +1,29 @@
+@use "../abstracts/index" as *;
+.form {
+  width: 100%;
+  @include flex($gap: 1.02rem);
+  &__input {
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 0.8rem;
+    border: 1px solid $color-gray-medium;
+    padding: 1.4rem 1.6rem;
+    height: 4.2rem;
+    margin-bottom: 1.6rem;
+    outline: none;
+  }
+
+  &__cta {
+    flex: 1 0 14.9rem;
+    font-size: 1.7rem;
+    height: 4.2rem;
+    font-family: $font-tertiary, sans-serif;
+    color: $color-ligth;
+    background-color: $color-black-2;
+    padding: 1.4rem 3rem;
+    border-radius: 1rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+}

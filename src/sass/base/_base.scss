@@ -1,41 +1,41 @@
 @use "../abstracts/index" as *;
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: $font-primary, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  color: $primary-color;
-  background-color: $color-ligth;
+    font-family: $font-primary, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $primary-color;
+    background-color: $color-ligth;
 }
 
 .free-shipping {
-  padding: 0.5rem 0;
-  font-size: 1.4rem;
-  text-align: center;
-  color: $color-ligth;
-  background-color: $color-black;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $color-ligth;
+    background-color: $color-black;
 
-  &__span {
-    color: $color-green;
-    font-weight: 600;
-  }
+    &__span {
+        color: $color-green;
+        font-weight: 600;
+    }
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
 }

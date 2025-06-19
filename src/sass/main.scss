@@ -9,10 +9,6 @@
 @use "./layout/footer";
 @use "./layout/header";
 
-@use "./components/button";
-@use "./components/carousel";
-@use "./components/category";
-@use "./components/highlight";
-@use "./components/slider";
+@use "./components/index" as components;
 
 @use "./pages/home";
