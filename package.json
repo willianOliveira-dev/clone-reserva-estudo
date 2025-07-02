@@ -2,7 +2,7 @@
   "name": "projeto_ecommerce",
   "version": "1.0.0",
   "description": "Este projeto é uma **cópia não oficial** da página da marca **Reserva**, criado **apenas para fins de estudo e prática de desenvolvimento web**.",
-  "main": "index.js",
+  "main": "./src/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
