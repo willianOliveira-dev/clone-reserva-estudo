@@ -28,6 +28,6 @@ export function progressBar() {
   carouselContainer.style = `transform: translateX(-${itemCurrent * 100}%)`;
   itemCurrent = (itemCurrent + 1) % buttonElements.length;
   setTimeout(() => {
-    progressBar(itemCurrent);
+    progressBar();
   }, 5000);
 }
